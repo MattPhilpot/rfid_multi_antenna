@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RFID_Multi" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/RFID_Multi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DEBUG_MODE" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/RFID_Multi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="UnitTest">
+				<Option output="bin/UnitTest/RFID_Multi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/UnitTest/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="src/bluetooth/bluetooth.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/bluetooth/bluetooth.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/bluetooth/hci.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/bluetooth/hci.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/bluetooth/hci_lib.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/bluetooth_util.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/configuration.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/configuration.h" />
+		<Unit filename="src/curl_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/global_vars.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gps_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gps_functions.h" />
+		<Unit filename="src/impinj/config.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/impinj/iri_lt.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/impinj/iri_lt.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/impinj/platform.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/impinj/platform_linux.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/impinj/version.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/impinj_config/rs2000_config.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/impinj_config/rs2000_config.h" />
+		<Unit filename="src/ipj_util_lt.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/ipj_util_lt.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/json_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mac_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mac_functions.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/memory_helper/memory_helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memory_helper/memory_helper.h" />
+		<Unit filename="src/memory_helper/memory_helper_macros.h" />
+		<Unit filename="src/nmea/context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/context.h" />
+		<Unit filename="src/nmea/generator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/generator.h" />
+		<Unit filename="src/nmea/glgns.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/glgns.h" />
+		<Unit filename="src/nmea/gngns.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/gngns.h" />
+		<Unit filename="src/nmea/gpgga.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/gpgga.h" />
+		<Unit filename="src/nmea/gpgsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/gpgsa.h" />
+		<Unit filename="src/nmea/gpgsv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/gpgsv.h" />
+		<Unit filename="src/nmea/gprmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/gprmc.h" />
+		<Unit filename="src/nmea/gpvtg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/gpvtg.h" />
+		<Unit filename="src/nmea/info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/info.h" />
+		<Unit filename="src/nmea/nmath.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/nmath.h" />
+		<Unit filename="src/nmea/parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/parser.h" />
+		<Unit filename="src/nmea/sentence.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/sentence.h" />
+		<Unit filename="src/nmea/util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/util.h" />
+		<Unit filename="src/nmea/validate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nmea/validate.h" />
+		<Unit filename="src/qmi_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/qmi_functions.h" />
+		<Unit filename="src/qmi_functions_pds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/qmi_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/qmi_util.h" />
+		<Unit filename="src/speedway_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/tag_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/tag_data.h" />
+		<Unit filename="src/tagstruct.h" />
+		<Unit filename="src/time_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/util_functions.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="test/testMain.c">
+			<Option compilerVar="CC" />
+			<Option target="UnitTest" />
+		</Unit>
+		<Unit filename="test/test_tag_data.c">
+			<Option compilerVar="CC" />
+			<Option target="UnitTest" />
+		</Unit>
+		<Unit filename="test/test_tag_functions.c">
+			<Option compilerVar="CC" />
+			<Option target="UnitTest" />
+		</Unit>
+		<Unit filename="test/unity/unity.c">
+			<Option compilerVar="CC" />
+			<Option target="UnitTest" />
+		</Unit>
+		<Unit filename="test/unity/unity.h">
+			<Option target="UnitTest" />
+		</Unit>
+		<Unit filename="test/unity/unity_internals.h">
+			<Option target="UnitTest" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
